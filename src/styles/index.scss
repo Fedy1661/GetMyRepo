@@ -1,0 +1,88 @@
+@import './antd.min.scss';
+@import '../../node_modules/highlight.js/styles/darcula.css';
+@import './spinner.scss';
+
+body {
+  background-color: #3c3f41;
+}
+.icon {
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  left: -15%;
+  top: 17%;
+}
+.header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & .header__title {
+    color: #bbbbba;
+    margin-bottom: 0;
+  }
+}
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  height: 90vh;
+}
+.tree {
+  width: 30%;
+  height: 100%;
+  background-color: #3c3f41;
+  border-top: 3px solid rgb(43, 43, 43);
+  overflow: hidden;
+  overflow-y: visible;
+  &
+    .ant-tree.ant-tree-directory
+    > li
+    span.ant-tree-node-content-wrapper
+    > span {
+    color: #bbbbba;
+    font-size: 17px;
+    font-weight: 600;
+  }
+}
+[aria-label='icon: caret-down'] {
+  color: #bbbbba;
+}
+.review {
+  width: 70%;
+  white-space: pre-wrap;
+  overflow-y: scroll;
+  height: 100%;
+  background-color: rgb(43, 43, 43);
+}
+.ant-tree.ant-tree-directory
+  > li.ant-tree-treenode-selected
+  > span.ant-tree-node-content-wrapper:before,
+.ant-tree.ant-tree-directory
+  .ant-tree-child-tree
+  > li.ant-tree-treenode-selected
+  > span.ant-tree-node-content-wrapper:before {
+  background: #49473f;
+}
+.ant-tree.ant-tree-directory
+  .ant-tree-child-tree
+  > li
+  span.ant-tree-node-content-wrapper:before,
+.ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper:before {
+  height: 29px;
+}
+.ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper,
+.ant-tree-treenode-selected {
+  padding-bottom: 10px;
+  &::before {
+    height: 29px;
+  }
+}
+.hljs {
+  white-space: pre-wrap;
+}
+.modal-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 470px;
+  max-height: 300px;
+}
