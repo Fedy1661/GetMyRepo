@@ -15,7 +15,7 @@
     "@ant-design/icons": "^2.1.1",
     "antd": "^3.26.11",
     "axios": "^0.21.1",
-    "highlight.js": "^9.18.1",
+    "highlight.js": "^10.4.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-highlight": "^0.12.0",
